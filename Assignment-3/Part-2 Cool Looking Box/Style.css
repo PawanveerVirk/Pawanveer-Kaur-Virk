@@ -13,4 +13,15 @@ html {
   /* font size */
     font-size: 1.1rem;
 
-  }
+  /* text align and color*/
+    text-align: center;
+    color: white;
+
+  /* shadow, border of box*/
+   text-shadow: 1px 1px 1px black;
+   border-radius: 10px;
+   border: 1px solid #990000;
+
+
+
+}
