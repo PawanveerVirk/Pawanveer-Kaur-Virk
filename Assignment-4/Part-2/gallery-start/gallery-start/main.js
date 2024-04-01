@@ -11,10 +11,17 @@ const imageArray = ['pic1.jpg', 'pic2.jpg','pic3.jpg','pic4.jpg','pic5.jpg'];
 const altText =['A beautiful Lanscapee','A beautiful Lanscapee','A beautiful Lanscapee','A beautiful Lanscapee','A beautiful Lanscapee'];
 
 /* Looping through images */
+for (let i = 0; i <imageArray.length; i++) {
+   const newImage = document.createElement('img'); 
+   newImage.setAttribute('src', 'images/' + imageArray[i]);
+   newImage.setAttribute('alt', altText [i]);
+   thumbBar.appendChild(newImage); 
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
+    newImage.addEventListener('click', (e) => {
+        displayedImage.src = e.target.src;
+    }
+    ); 
+
+}
 
 /* Wiring up the Darken/Lighten button */
